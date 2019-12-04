@@ -7,9 +7,9 @@ fname: source file name
 fname2: destination file name
 blocksize: size of blocks in bytes
 """
-# filenames must be input
-#fname = '~/infile.txt'
-#fname2 = '~/outfile.txt'
+# filenames
+fname = '/Users/timothysnipes/Desktop/PyCharmProjects/sample_projects/cryptoLab/infile.txt'
+fname2 = '/Users/timothysnipes/Desktop/PyCharmProjects/sample_projects/cryptoLab/outfile.txt'
 # get the full path names
 path = os.path.abspath(fname)
 path2 = os.path.abspath(fname2)
@@ -43,9 +43,9 @@ while True:
  else:
     # extract subarray
     data2 = data[0:num]
- # write subarray to destination and break loop
- file2.write(data2)
- break
+    # write subarray to destination and break loop
+    file2.write(data2)
+    break
 
  # close files (note will also flush destination file
  file.close()
